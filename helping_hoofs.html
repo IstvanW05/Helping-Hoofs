@@ -20,32 +20,42 @@ Helping Hoofs
 ! TXT_MODE 0
 
 PAL 0
-236,24,40
-92,239,124
+255,0,0
+0,255,0
 0,0,0
-NAME blueprint
+NAME Red/Green/Black
+
+PAL 1
+0,0,255
+255,0,255
+0,255,255
+NAME Blue/Magenta/Cyan
+
+PAL 2
+0,255,255
+0,0,255
+255,0,255
+NAME Cave
 
 ROOM 0
-l,m,n,0,0,0,0,0,0,0,0,0,0,0,0,0
-l,l,m,n,0,0,0,0,0,0,k,0,0,0,h,0
-l,l,d,d,d,d,g,0,0,h,j,0,0,0,0,0
-l,l,h,0,0,0,0,0,h,0,0,0,0,h,k,0
-l,l,i,0,0,h,e,0,0,0,0,0,0,0,j,0
-l,l,d,d,d,d,g,0,0,0,0,0,0,0,0,0
-l,l,0,0,0,0,0,0,0,0,0,h,0,0,0,i
-0,0,k,h,h,0,0,0,0,k,0,0,0,0,i,0
-0,0,j,0,0,0,0,0,0,j,0,0,0,0,0,0
+l,m,n,0,0,0,r,d,d,d,d,d,d,d,d,f
+l,l,m,n,0,0,e,0,0,0,k,0,0,0,h,e
+l,l,d,d,d,d,g,0,0,h,j,0,0,0,0,e
+l,l,h,0,0,0,0,0,h,0,0,0,0,h,k,e
+l,l,i,0,0,h,e,0,0,0,0,0,0,0,j,e
+l,l,d,d,d,d,g,0,0,0,0,0,0,0,0,e
+l,l,0,0,0,0,e,0,0,0,0,h,0,0,0,e
+0,0,k,h,h,0,e,0,0,0,0,0,0,0,i,e
+0,0,j,0,0,0,s,d,d,d,f,0,0,0,r,g
 o,l,l,l,p,o,o,o,p,p,o,p,q,q,p,o
 p,l,l,p,l,p,l,o,o,p,l,l,q,q,l,o
 l,p,o,l,o,l,p,l,p,l,l,p,q,q,l,p
 0,k,0,0,0,0,0,0,0,0,0,0,0,0,k,0
 0,j,k,0,0,0,k,0,0,k,0,k,0,0,j,0
-0,0,j,k,0,k,j,h,k,j,k,j,h,k,0,k
-0,0,0,j,0,j,0,k,j,0,j,0,k,j,i,j
+k,0,j,k,0,k,j,h,k,j,k,j,h,k,0,k
+j,0,0,j,0,j,0,k,j,0,j,0,k,j,i,j
 NAME The Stables
-ITM 0 1,15
 EXT 4,15 1 3,0
-EXT 2,15 2 14,1
 PAL 0
 TUNE 2
 
@@ -53,44 +63,237 @@ ROOM 1
 0,k,k,0,k,0,0,j,0,0,0,0,j,0,0,k
 0,j,j,0,j,0,0,0,0,0,0,0,0,0,0,j
 0,0,k,0,k,0,0,k,0,0,k,0,0,0,0,0
-0,0,j,0,j,0,k,j,0,0,j,0,k,0,k,0
-k,0,k,0,k,0,j,0,0,k,0,k,j,k,j,k
+0,k,j,0,j,0,k,j,0,0,j,0,k,0,k,0
+k,j,k,0,k,0,j,0,0,k,0,k,j,k,j,k
 j,0,j,0,j,0,k,0,k,j,0,j,0,j,0,j
-0,0,k,0,0,0,j,0,j,0,0,0,0,0,0,0
-0,0,j,0,0,0,k,0,0,0,0,k,k,0,0,0
+0,0,k,0,0,0,j,0,j,0,0,0,0,0,0,k
+0,0,j,0,0,0,k,0,0,0,0,k,k,0,0,j
 0,0,0,k,k,k,j,k,k,0,k,j,j,k,0,k
 0,0,k,j,j,j,0,j,j,k,j,0,0,j,0,j
 k,0,j,j,0,0,k,k,k,j,k,0,0,k,0,0
 j,0,k,0,k,0,j,j,j,0,j,0,k,j,0,k
 0,0,j,k,j,0,0,0,k,0,0,0,j,0,0,j
 0,0,0,j,0,0,k,k,j,0,k,0,0,0,k,k
-k,k,0,0,0,0,j,j,0,0,j,0,0,k,j,j
-j,j,0,0,k,0,0,0,0,0,k,0,0,j,0,0
+k,k,0,0,0,0,j,j,0,0,j,k,k,k,j,j
+j,j,k,0,0,0,0,0,0,k,0,0,0,j,0,0
 NAME Across the bridge
-EXT 0,0 0 0,15
-PAL 0
+EXT 3,0 0 4,15
+EXT 0,7 2 15,14
+EXT 0,8 2 15,13
+EXT 0,9 2 15,14
+PAL 1
+TUNE 3
 
 ROOM 2
-l,m,n,0,0,0,0,0,0,0,0,0,0,0,0,0
-l,l,m,n,0,0,0,0,0,0,k,0,0,0,h,0
-l,l,d,d,d,d,g,0,0,h,j,0,0,0,0,0
-l,l,h,0,0,0,0,0,h,0,0,0,0,h,k,0
-l,l,i,0,0,h,e,0,0,0,0,0,0,0,j,0
-l,l,d,d,d,d,g,0,0,0,0,0,0,0,0,0
-l,l,0,0,0,0,0,0,0,0,0,h,0,0,0,i
-0,0,k,h,h,0,0,0,0,k,0,0,0,0,i,0
-0,0,j,0,0,0,0,0,0,j,0,0,0,0,0,0
-o,l,l,l,p,o,o,o,p,p,o,p,q,q,p,o
-p,l,l,p,l,p,l,o,o,p,l,l,q,q,l,o
-l,p,o,l,o,l,p,l,p,l,l,p,q,q,l,p
-0,k,0,0,0,0,0,0,0,0,0,0,0,0,k,0
-0,j,k,0,0,0,k,0,0,k,0,k,0,0,j,0
-0,0,j,k,0,k,j,h,k,j,k,j,h,k,0,k
-0,0,0,j,0,j,0,k,j,0,j,0,k,j,i,j
-NAME The Stables copy 1
-END a 5,3
+l,0,0,0,0,0,0,0,11,16,17,12,0,0,0,0
+l,l,0,k,0,0,0,0,11,18,19,12,0,0,0,0
+q,l,l,j,k,0,0,0,14,15,15,13,10,k,0,0
+l,l,l,l,j,w,v,v,v,x,0,0,0,j,0,0
+l,l,l,q,l,l,u,u,u,l,l,l,q,l,l,l
+q,l,l,l,l,l,t,t,t,q,l,l,q,l,l,q
+l,l,0,l,l,l,t,u,u,l,l,l,q,l,q,l
+l,10,10,10,l,q,u,t,u,l,l,l,q,l,l,l
+l,0,0,0,l,l,u,t,t,l,l,l,1a,l,l,l
+z,0,0,0,z,z,y,y,y,z,z,z,0,z,z,z
+k,0,0,0,0,0,l,y,y,0,k,0,0,0,0,0
+j,0,0,0,0,0,y,l,y,0,j,0,0,0,k,0
+0,0,0,0,0,0,q,q,q,0,0,0,0,0,j,0
+0,0,0,0,0,0,q,q,q,0,0,0,k,0,0,0
+0,k,0,0,0,0,y,l,l,0,0,0,j,0,0,0
+0,j,0,0,0,0,l,l,y,0,0,0,0,0,0,0
+NAME Cave Entrance
+ITM 1 11,3
+EXT 15,14 1 0,7
+EXT 15,13 1 0,8
+EXT 15,14 1 0,9
+EXT 1,8 3 15,9
+EXT 2,8 3 15,10
+EXT 3,8 3 15,11
 PAL 0
-TUNE 2
+TUNE 3
+
+ROOM 3
+l,l,l,1b,l,l,l,l,l,l,l,l,l,l,l,l
+l,1c,1b,1c,1b,l,1b,1c,1b,1c,1b,1b,1c,1b,1c,l
+l,0,1c,0,1c,1b,1c,1f,1c,1f,1c,1c,0,1c,0,1b
+1b,0,1d,0,1f,1c,0,1d,1g,0,0,0,0,1f,0,1c
+1c,0,1e,1d,0,1f,0,1e,0,0,1d,0,0,1d,0,1d
+1d,l,l,l,l,0,1d,l,1d,0,1e,1d,0,1e,1d,1e
+l,0,z,z,0,l,l,l,l,l,l,1e,1d,l,1e,l
+z,h,h,0,i,z,z,z,z,z,0,l,l,l,l,l
+h,0,i,i,i,0,i,i,0,0,0,z,z,z,0,0
+i,i,h,0,0,h,0,0,i,h,h,0,0,i,i,0
+0,0,i,i,h,h,h,1d,i,0,h,h,0,0,h,0
+0,h,0,0,0,h,1d,1e,1d,i,i,0,h,h,h,0
+0,1d,0,i,0,0,1e,l,l,l,1d,1d,0,0,i,0
+1d,1e,0,1d,0,l,l,l,l,l,l,1e,1d,l,l,l
+l,l,1d,1e,l,l,l,l,l,l,l,l,l,l,l,l
+l,l,l,l,l,l,l,l,l,l,l,l,l,l,l,l
+NAME The Cave
+EXT 15,9 2 1,8
+EXT 15,10 2 2,8
+EXT 15,11 2 3,8
+PAL 2
+TUNE 1
+
+TIL 10
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Barrier
+WAL true
+
+TIL 11
+00000000
+00000000
+00000000
+00000110
+00000110
+00000000
+00000000
+00000000
+>
+00000000
+00000000
+00000000
+00011100
+00011100
+00000000
+00000000
+00000000
+NAME Sun Ray L
+
+TIL 12
+00000000
+00000000
+00000000
+01100000
+01100000
+00000000
+00000000
+00000000
+>
+00000000
+00000000
+00000000
+00111000
+00111000
+00000000
+00000000
+00000000
+NAME Sun Ray R
+
+TIL 13
+11000000
+11000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+>
+00000000
+01100000
+01100000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Sun Ray Dia B.R
+WAL true
+
+TIL 14
+00000011
+00000011
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+>
+00000000
+00000110
+00000110
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Sun Ray Dia B.L.
+WAL true
+
+TIL 15
+00000000
+00011000
+00011000
+00000000
+00000000
+00000000
+00000000
+00000000
+>
+00000000
+00000000
+00011000
+00011000
+00011000
+00000000
+00000000
+00000000
+NAME Sun Ray B
+WAL true
+
+TIL 16
+00000000
+00000000
+00000111
+00001111
+00011111
+00111111
+00111111
+00111111
+NAME S1
+
+TIL 17
+00000000
+00000000
+11100000
+11110000
+11111000
+11111100
+11111100
+11111100
+NAME S2
+
+TIL 18
+00111111
+00111111
+00111111
+00011111
+00001111
+00000111
+00000000
+00000000
+NAME S3
+
+TIL 19
+11111100
+11111100
+11111100
+11111000
+11110000
+11100000
+00000000
+00000000
+NAME S4
 
 TIL d
 00000000
@@ -275,6 +478,265 @@ TIL q
 00000000
 NAME Bridge Tile
 
+TIL r
+00000000
+00011000
+00011000
+00011111
+00011111
+00011000
+00011000
+00011000
+NAME Fence T.R.
+WAL true
+
+TIL s
+00011000
+00011000
+00011000
+00011111
+00011111
+00011000
+00011000
+00011000
+NAME Fence B.L.
+WAL true
+
+TIL t
+10101101
+10111101
+10111111
+10101011
+10101011
+11101011
+11101011
+10101111
+>
+10101101
+10101101
+10111101
+10111111
+10101011
+10101011
+11101011
+11101011
+NAME WaterFall 1
+WAL true
+
+TIL u
+11111101
+10111101
+11011101
+10111011
+10101101
+10110111
+10101111
+11101111
+>
+10101111
+11101101
+11101101
+10111101
+11011101
+10111011
+10101101
+10110111
+NAME WaterFall 2
+WAL true
+
+TIL v
+00000000
+00000000
+00100000
+00010010
+10000100
+01000000
+00000000
+11111111
+>
+00000000
+10000010
+01000100
+00000000
+10010000
+00001001
+00000000
+11111111
+NAME WaterFall Top
+WAL true
+
+TIL w
+00000000
+00000000
+00000000
+00000011
+00000100
+00001000
+00010001
+00010011
+>
+00000000
+00000000
+00000011
+00001000
+00010001
+00010100
+00000000
+00000001
+NAME WaterFall T.L.
+WAL true
+
+TIL x
+00000000
+00000000
+00000000
+11000000
+00100000
+00010000
+10001000
+11001000
+>
+00000000
+00000000
+11000000
+00010000
+00001000
+00100000
+00001000
+10001000
+NAME WaterFall T.R.
+WAL true
+
+TIL y
+11110111
+11011011
+10110111
+11011011
+10110111
+11011011
+11110111
+11111111
+>
+11111011
+10110111
+11011011
+10110111
+11011011
+10110111
+11111011
+11111111
+WAL true
+
+TIL z
+11111111
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Base
+WAL true
+
+TIL 1a
+11111111
+00111000
+11000111
+11111111
+11110011
+10001101
+01111110
+01111110
+NAME FalseWall
+
+TIL 1b
+11111111
+11111111
+11111110
+01111100
+01111100
+01111100
+00111100
+00111100
+NAME Stal1
+WAL true
+
+TIL 1c
+00111000
+00011000
+00011000
+00011000
+00010000
+00010000
+00010000
+00000000
+NAME Stal2
+
+TIL 1d
+00000000
+00010000
+00010000
+00011000
+00011000
+00011000
+00111100
+00111100
+NAME Stal V
+WAL true
+
+TIL 1e
+00111100
+00111100
+01111110
+01111110
+01111110
+01111110
+11111111
+11111111
+NAME Stal V 2
+WAL true
+
+TIL 1f
+00000000
+00000000
+00010000
+00010000
+00000000
+00000000
+00000000
+00000000
+>
+00010000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
+NAME Drip
+
+TIL 1g
+01000000
+01000000
+00000000
+00000000
+00000000
+00000100
+00000100
+00000000
+>
+00000100
+00000000
+00000000
+01000000
+01000000
+01000000
+00000000
+00000000
+NAME Drip 2
+
 SPR A
 00000000
 00001110
@@ -293,7 +755,7 @@ SPR A
 01111100
 00111100
 00100100
-POS 0 4,3
+POS 0 2,4
 
 SPR a
 00000000
@@ -327,7 +789,7 @@ SPR b
 00100100
 00100100
 00100100
-NAME Sign
+NAME Sign (Stables)
 DLG 3
 POS 0 11,8
 
@@ -340,7 +802,7 @@ SPR c
 00100100
 00100100
 00100100
-NAME Sign 2
+NAME Sign 1 (Across the Bridge)
 DLG 4
 POS 1 13,1
 
@@ -353,6 +815,7 @@ SPR d
 00100100
 00100100
 00100100
+NAME Sign 2 (Across the Bridge)
 DLG 5
 POS 1 12,9
 
@@ -365,7 +828,7 @@ SPR e
 01111111
 00000000
 00000000
-NAME Rock
+NAME Rock 1 (Across the Bridge)
 DLG 6
 POS 1 5,7
 
@@ -378,30 +841,31 @@ SPR f
 01111111
 00000000
 00000000
+NAME Rock 2 (Across the Bridge)
 DLG 7
 POS 1 0,13
 
 SPR g
 00000000
-00011000
-01111110
-00011000
-00111100
-01111110
-10111101
-00100100
+00010000
+00110000
+01111111
+01111111
+00110000
+00010000
+00000000
 >
-00011000
-01111110
-00011000
-00111100
-01111110
-10111101
-00100100
-00100100
-NAME Cowboy 2
-DLG 8
-POS 2 8,5
+00000000
+00100000
+01100000
+11111110
+11111110
+01100000
+00100000
+00000000
+NAME Indicator Left (Cacti Valley)
+DLG b
+POS 1 1,6
 
 SPR h
 00000000
@@ -412,22 +876,87 @@ SPR h
 00100100
 00100100
 00100100
-NAME 1 Sign
-DLG 9
-POS 2 11,8
+NAME Sign (Cave Entrance)
+DLG c
+POS 2 9,14
 
 SPR i
+00011000
+00111100
+01111110
+00011000
+00011000
+00011000
+00011000
 00000000
+>
+00000000
+00011000
+00111100
 01111110
-01010110
-01101010
+00011000
+00011000
+00011000
+00011000
+NAME Indicator Up (Cave Entrance)
+DLG d
+POS 2 1,13
+
+SPR j
+00000000
+00000000
+00100000
+01100000
+11111110
+00111101
+00100101
+00100100
+>
+00000000
+00000000
+00000000
+00100000
+01100000
+11111110
+00111101
+00100100
+NAME Coyote
+DLG g
+POS 3 3,9
+
+SPR k
+00000000
+00000000
+00011100
+00110010
+01111111
+01111111
+00000000
+00000000
+NAME Rock (Coyote's Rock)
+DLG f
+POS 3 0,11
+
+SPR l
+00000000
+00011000
+00011000
+00011000
+00011000
 01111110
-00100100
-00100100
-00100100
-NAME Sign *Gasp*
-DLG b
-POS 2 13,1
+00111100
+00011000
+>
+00011000
+00011000
+00011000
+00011000
+01111110
+00111100
+00011000
+00000000
+DLG h
+POS 0 3,12
 
 ITM 0
 00000000
@@ -441,42 +970,45 @@ ITM 0
 NAME Sheriff Star
 DLG 1
 
+ITM 1
+00000000
+00000000
+00000000
+01000000
+01100110
+00110111
+00110110
+00110110
+NAME Bunny
+DLG e
+
 DLG 0
 """
-Howdy horsey! I know you're anxious to head out...
-but I cant find my sheriff star anywhere.
-I never leave home without it.
+{
+  - {item "0"} == 0 ?
+    Howdy Lil' Horsey!{pg}I seem to have lost my Sheriff's Star.{pg}If you could help me find it we can go a riding.{pg}But...{pg}I haven't the slightest idea where I done left 'er
+}{
+  - {item "0"} == 1 ?
+    Well I'll be!{pg}You found it Lil' Horsey!{pg}Hope she weren't too much trouble gettin'{pg}Let's ride shall we...{tune "0"}{end}
+}
 """
-NAME cat dialog
+NAME cowboy dialog
 
 DLG 1
 {wvy}*You found a Sheriff's Star*{wvy}
-NAME tea dialog
+NAME Star dialog
 
 DLG 3
-"""
-*It's a sign*
-Welcome to Shallow River!
-Yes, the name is original...
-No you can't waddle in, take the bridge.
-"""
+*It's a sign*{pg}Welcome to Shallow River!{pg}Yes, the name is original...{pg}No you can't waddle in,{pg}take the bridge.
 NAME Sign dialog
 
 DLG 4
-"""
-*It's a sign*
-You're in Cactuses Valley!
-Or was it Cacti Valley...
-Anyway, there are tons of Cactel
-"""
+*It's a sign*{pg}You're in Cactuses Valley!{pg}Or was it Cactul Valley...{pg}Anyway, there are tons of Cacti{pg}
 NAME Sign 2 dialog
 
 DLG 5
-"""
-*It's a sign*
-I'm certain it was cacte...
-"""
-NAME sprite d dialog
+*It's a sign*{pg}I'm certain it was cacte...
+NAME Sign Valley dialog
 
 DLG 6
 *It's just a rock*
@@ -486,36 +1018,44 @@ DLG 7
 *Oh goodie! Another Rock!*
 NAME sprite f dialog
 
-DLG 8
-"""
-Oh goodie! You found my star Lil' Horsey!
-I wonder where I done left it...
-Head back to your pen and I'll be right out to ride.
-"""
-NAME Cowboy 2 dialog
-
-DLG 9
-"""
-*It's a sign*
-Welcome to Shallow River!
-Yes, the name is original...
-No you can't waddle in, take the bridge.
-"""
-NAME sprite h dialog
-
-DLG a
-The end
-NAME ending 1
-
 DLG b
-"""
-How'd you end up here?
-You were just across the bridge.
-"""
-NAME sprite i dialog
+*Go Left*
+NAME Indicator Left dialog
 
-VAR a
-42
+DLG c
+*It's a sign*{pg}There's a cave up ahead...{pg}Hope there isn't a coyote.
+NAME Sign (Cave Entrance) dialog
+
+DLG d
+*Go Up*
+NAME Indicator Up dialog
+
+DLG e
+{wvy}You found a Stuffed Bunny{wvy}
+NAME Bunny dialog
+
+DLG f
+*It's Coyote's Rock*
+NAME Rock (Coyote's Rock) dialog
+
+DLG g
+"""
+{
+  - {item "1"} == 0 ?
+    {shk}*GRRRRRRRRRRRRRRRRRRRRR*{/shk}{pg}What do you want?{pg}Have I seen a star?{pg}Yeah, it's mine!{pg}Tell you what...{pg}I'll give it to you if you can find my Stuffed Bunny{pg}I left it somewhere out side...{pg}I'm so mad at you Mr. Fluff Bun...
+}{
+  - {item "1"} == 1 ?
+    {wvy}WOOOOO HOOOOOO{/wvy}{pg}Thank you! Thank you !Thank you!{pg}Here, you were looking for this weren't you?{item "0" {{item "0"} + 1}}{pg}{clr 0}{wvy}You've received a Sheriff's Star!{/wvy}{/clr}
+}
+"""
+NAME Coyote dialog
+
+DLG h
+*Go Down*
+NAME sprite l dialog
+
+VAR Coyote
+0
 
 TUNE 1
 3d,0,0,0,3d5,0,0,0,3l,0,0,0,3s,0,0,0
